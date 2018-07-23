@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1782561647654158}
+  m_IsPrefabAsset: 1
+--- !u!1 &1782561647654158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4398753410396964}
+  - component: {fileID: 114968378713782664}
+  - component: {fileID: 114672510676645408}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4398753410396964
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1782561647654158}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114672510676645408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1782561647654158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83298051986604e798659bce4797a83b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columns: 8
+  rows: 8
+  wallCount:
+    minimum: 5
+    maximum: 9
+  foodCount:
+    minimum: 1
+    maximum: 5
+  exit: {fileID: 1151185705253632, guid: 903e7e2095b6e4e0ab7bf01d751e94d9, type: 2}
+  floorTiles:
+  - {fileID: 1736645515975516, guid: 04cb54489d4274f979b4a9e314187512, type: 2}
+  - {fileID: 1130665893464352, guid: 0c10443d94e1e482dbf9d9d13d5d6907, type: 2}
+  - {fileID: 1180321966264738, guid: fbee9b2195807462fb49135246490d8e, type: 2}
+  - {fileID: 1505748726912258, guid: 47366eea7ee25498eb74b08cb0b50662, type: 2}
+  - {fileID: 1767352702392316, guid: 0ba029425749443a5addb218680b5ac0, type: 2}
+  - {fileID: 1806892097060132, guid: 8042d8276c2634c319411ea51693553c, type: 2}
+  - {fileID: 1161123048532332, guid: 7822fae5100d041d4a3efa442365d45f, type: 2}
+  - {fileID: 1732270772336282, guid: 9b89faf0806804b87bc662258e0939fb, type: 2}
+  wallTiles:
+  - {fileID: 1994332999176342, guid: 4c56df207e9134009a1d395e838645a9, type: 2}
+  - {fileID: 1759581961165374, guid: 85a379fad7c92486483b572a6035ce72, type: 2}
+  - {fileID: 1763147380328306, guid: e558130f306d3434cbd9b75405cc54a2, type: 2}
+  - {fileID: 1611952034547960, guid: e0f7661bb2f4e4f96b295f984c03e879, type: 2}
+  - {fileID: 1609567702720924, guid: f8a80912422844f5cb8b028286630454, type: 2}
+  - {fileID: 1768507010155844, guid: 0a4d947da6bb84532b957df4c8fe2c9a, type: 2}
+  - {fileID: 1485747431766626, guid: 30eb26259cb2941079157b17dc28c901, type: 2}
+  - {fileID: 1574691155633862, guid: b4c403227ab744d1487ab932e52e9cbc, type: 2}
+  foodTiles:
+  - {fileID: 1731560637062892, guid: c3222fe3f20cf44acbff39fbadd5570b, type: 2}
+  - {fileID: 1341660693023260, guid: 4e5bcf4f2a02f449d924cecb7ed7835f, type: 2}
+  enemyTiles:
+  - {fileID: 1017388743126654, guid: 0ccf739a0e5934843bad6d026a8e8ca4, type: 2}
+  - {fileID: 1764076552464404, guid: 8294ed3079e4445d3901f89aa072bb2c, type: 2}
+  outerWallTiles:
+  - {fileID: 1321271755461396, guid: 4d6179b8323794ff89fb7965bfa41843, type: 2}
+  - {fileID: 1855944990368388, guid: 4b83b4e4e8ee74d06a2e4188e1ad99f5, type: 2}
+  - {fileID: 1923712475647824, guid: 3fb30dbe3791541f2a38e8b81da4b494, type: 2}
+--- !u!114 &114968378713782664
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1782561647654158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2c1618df37324c9990037424df3846e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  instance: {fileID: 0}
+  boardScript: {fileID: 0}
